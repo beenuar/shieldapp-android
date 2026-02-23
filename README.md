@@ -1,5 +1,9 @@
 # ShieldApp — All-in-One Android Security Suite
 
+<p align="center">
+  <img src="docs/shieldapp-logo.png" width="200" alt="ShieldApp Logo"/>
+</p>
+
 ShieldApp is a comprehensive Android security suite that provides enterprise-grade protection in a consumer-friendly package. Everything runs on-device — no cloud dependency, no API keys required, no data collection.
 
 ## Features
