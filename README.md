@@ -60,7 +60,7 @@ ShieldApp is a comprehensive Android security suite that provides enterprise-gra
 ```bash
 # Clone
 git clone https://github.com/beenuar/apps-android.git
-cd cyble
+cd apps-android
 
 # Add your Firebase config
 # Place your google-services.json in app/
