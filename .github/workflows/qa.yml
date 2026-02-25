@@ -38,6 +38,9 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
+      - name: Inject Google Services Secret
+        run: echo '${{ secrets.GOOGLE_SERVICES_JSON }}' > app/google-services.json
+        
       - name: Run Unit Tests
         run: ./gradlew testReleaseUnitTest --no-daemon
 
