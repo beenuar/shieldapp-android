@@ -23,7 +23,7 @@ class AntivirusEngineTest {
         context = ApplicationProvider.getApplicationContext<Context>()
         val signatureDb = MalwareSignatureDatabase(context)
         val heuristicAnalyzer = HeuristicMalwareAnalyzer(context)
-        engine = AntivirusEngine(context, signatureDb, heuristicAnalyzer, CloudHashChecker())
+        engine = AntivirusEngine(context, signatureDb, heuristicAnalyzer, CloudHashChecker(), YaraRuleEngine())
     }
 
     @Test
