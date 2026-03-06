@@ -24,7 +24,7 @@ jobs:
         uses: gradle/actions/setup-gradle@v3
 
       - name: Run Detekt
-        run: ./gradlew detekt --no-daemon
+        run: ./gradlew detekt
   # here we test and build the app in the same github runner so that no extra runner is used and saves time in setting up the environment again during build
   test-and-build:
     runs-on: ubuntu-latest
@@ -82,7 +82,7 @@ jobs:
           KEYSTORE_FILE: "../release.keystore"
           KEY_ALIAS: "mock-alias"
           KEY_PASSWORD: "mock-password"
-        run: ./gradlew assembleRelease --no-daemon -x uploadCrashlyticsMappingFileRelease
+        run: ./gradlew assembleRelease -x uploadCrashlyticsMappingFileRelease
 
       - name: Upload Test Report
         uses: actions/upload-artifact@v4
